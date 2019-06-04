@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProjetoFigura
 {
-    class Quadrado
+    class Quadrado:Figura
     {
         private double lado;
 
         public double Lado {set => lado = value; }
 
-        public double Area()
+        override public double Area()
         {
             return (lado*lado);
         }

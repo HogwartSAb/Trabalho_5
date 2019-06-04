@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace ProjetoFigura
 {
-    class Circulo
+    class Circulo:Figura
     {
+        private double raio;
+
+        public double Raio {set => raio = value; }
+
+        override public double Area()
+        {
+            return 3.14 * raio;
+        }
     }
 }

@@ -6,21 +6,17 @@ using System.Threading.Tasks;
 
 namespace ProjetoFigura
 {
-    class Triangulo
+    class Triangulo:Figura
     {
         private double alturaT;
         private double baseT;
 
-        public double AlturaT
-        {
-            set = alturaT = value; }
-        public double BaseT
-        {
-            set = baseT = value; }
+        public double AlturaT {set => alturaT = value; }
+        public double BaseT {set => baseT = value; }
 
-        public double Area()
+        override public double Area()
         {
-            return (baseT  alturaT)  2;
+            return (baseT * alturaT) / 2;
         }
     }
 }
